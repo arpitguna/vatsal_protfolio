@@ -463,7 +463,12 @@ main {
   margin-bottom: 35px;
 }
 
-.service-title {
+.skill {
+  margin-bottom: 35px;
+}
+
+.service-title,
+.skill-title {
   margin-bottom: 20px;
 }
 
@@ -735,16 +740,28 @@ main {
   margin-bottom: 25px;
 }
 
-.timeline-list {
+.timeline-list,
+.skill-list {
   font-size: var(--fs-6);
   margin-left: 45px;
 }
 
-.timeline-item {
+.skill div {
+  display: block;
+}
+
+.skill-list {
+  color: white;
+  min-width: 100%;
+}
+
+.timeline-item,
+.skill-item {
   position: relative;
 }
 
-.timeline-item:not(:last-child) {
+.timeline-item:not(:last-child),
+.skill-item {
   margin-bottom: 20px;
 }
 
@@ -770,7 +787,8 @@ main {
   background: var(--jet);
 }
 
-.timeline-item::after {
+.timeline-item::after,
+.skill-item::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1459,11 +1477,13 @@ textarea.form-input::-webkit-resizer {
     margin-left: 65px;
   }
 
-  .timeline-item:not(:last-child)::before {
+  .timeline-item:not(:last-child)::before,
+  .skill-item:not(:last-child)::before {
     left: -40px;
   }
 
-  .timeline-item::after {
+  .timeline-item::after,
+  .skill-item::after {
     height: 8px;
     width: 8px;
     left: -43px;
@@ -1549,6 +1569,13 @@ textarea.form-input::-webkit-resizer {
     width: 80px;
   }
 
+  .skill-list {
+    min-width: 50%;
+  }
+
+  .skill div{
+    display: flex;
+  }
 
   .article-title {
     padding-bottom: 20px;
